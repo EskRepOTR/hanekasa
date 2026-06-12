@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>HaneKasa - Gizlilik Politikası</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm 15mm;
+            @bottom-right {
+                content: counter(page);
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                font-size: 9pt;
+                color: #64748b;
+            }
+            @bottom-left {
+                content: "HaneKasa Gizlilik Politikası v1.0";
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                font-size: 9pt;
+                color: #64748b;
+            }
+        }
+        
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #1e293b;
+            line-height: 1.6;
+            font-size: 10pt;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header-banner {
+            background-color: #0f172a;
+            color: #ffffff;
+            padding: 25px 20px;
+            margin-bottom: 30px;
+            border-radius: 4px;
+        }
+        
+        .header-banner h1 {
+            margin: 0;
+            font-size: 22pt;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        
+        .header-banner .subtitle {
+            margin-top: 5px;
+            font-size: 11pt;
+            color: #94a3b8;
+        }
+        
+        .meta-info {
+            font-size: 9pt;
+            color: #64748b;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            font-size: 13pt;
+            color: #0f172a;
+            border-left: 4px solid #0284c7;
+            padding-left: 10px;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            page-break-after: avoid;
+        }
+        
+        h3 {
+            font-size: 11pt;
+            color: #334155;
+            margin-top: 15px;
+            margin-bottom: 8px;
+            page-break-after: avoid;
+        }
+        
+        p {
+            margin-top: 0;
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+        
+        ul, ol {
+            margin-top: 0;
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 6px;
+        }
+        
+        .callout-box {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-left: 4px solid #64748b;
+            padding: 12px 15px;
+            margin: 15px 0;
+            border-radius: 0 4px 4px 0;
+            page-break-inside: avoid;
+        }
+        
+        .callout-box p:last-child {
+            margin-bottom: 0;
+        }
+        
+        .table-container {
+            margin: 20px 0;
+            page-break-inside: avoid;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 9.5pt;
+        }
+        
+        th {
+            background-color: #1e293b;
+            color: #ffffff;
+            text-align: left;
+            padding: 8px 12px;
+            font-weight: 600;
+        }
+        
+        td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        tr:nth-child(even) td {
+            background-color: #f8fafc;
+        }
+        
+        .bold {
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-banner">
+        <h1>HaneKasa Mobil Uygulaması</h1>
+        <div class="subtitle">Gizlilik Politikası ve Aydınlatma Metni</div>
+    </div>
+
+    <div class="meta-info">
+        <strong>Son Güncelleme Tarihi:</strong> 12 Haziran 2026 | <strong>Sürüm:</strong> 1.0.0
+    </div>
+
+    <p>HaneKasa ("Uygulama") olarak, kullanıcılarımızın ("Kullanıcı" veya "Siz") finansal gizliliğine ve veri güvenliğine en üst düzeyde önem veriyoruz. Bu Gizlilik Politikası, Google Play Store politikaları, KVKK (Kişisel Verilerin Korunması Kanunu) ve GDPR (Genel Veri Koruma Yönetmeliği) gerekliliklerine tam uyumlu olarak; uygulamayı kullanırken hangi verilerinizin işlendiğini, nasıl saklandığını ve haklarınızı şeffaf bir şekilde açıklamak amacıyla hazırlanmıştır.</p>
+
+    <div class="callout-box">
+        <p><strong>Mimarimizin Temel İlkesi: Çevrimdışı Öncelikli Tasarım (Offline-First)</strong><br>
+        HaneKasa, temel fonksiyonlarını cihazınızda yerel olarak yürütecek şekilde tasarlanmıştır. Finansal verileriniz cihazınızda yüksek düzeyde şifreleme (AES-256) ile saklanır ve açık rızanız olmadan üçüncü taraf sunuculara aktarılmaz.</p>
+    </div>
+
+    <h2>1. Toplanan Veriler ve İşleme Amaçları</h2>
+    <p>Uygulamanın vaat ettiği finansal yönetim ve akıllı analiz özelliklerini sunabilmesi adına aşağıdaki kategorilerdeki veriler yerel veya bulut tabanlı olarak işlenmektedir:</p>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 25%;">Veri Kategorisi</th>
+                    <th style="width: 45%;">İşlenen Detaylar</th>
+                    <th style="width: 30%;">Yasal Dayanak ve Amaç</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="bold">Finansal Veriler</td>
+                    <td>Gelir/gider kayıtları, kategori bilgileri, bütçe sınırları, borç ve alacak vadelere ilişkin kayıtlar.</td>
+                    <td>Sözleşmenin ifası; bütçe takibi ve Finansal Sağlık Skoru hesaplanması.</td>
+                </tr>
+                <tr>
+                    <td class="bold">SMS Verileri</td>
+                    <td>Yalnızca bankalardan gelen harcama ve işlem bildirim mesajlarının metin içeriği.</td>
+                    <td>Kullanıcının açık rızası; Akıllı SMS Okuyucu özelliğinin çalıştırılması.</td>
+                </tr>
+                <tr>
+                    <td class="bold">Görsel / Medya</td>
+                    <td>Kullanıcı tarafından çekilen veya galeri içerisinden seçilen fatura ve fiş fotoğrafları.</td>
+                    <td>Kullanıcının açık rızası; OCR Fatura & Fiş Tarama özelliğinin işletilmesi.</td>
+                </tr>
+                <tr>
+                    <td class="bold">Hesap ve İletişim</td>
+                    <td>E-posta adresi, kullanıcı adı ve Ortak Aile Kasası için üretilen benzersiz davet kodları.</td>
+                    <td>Sözleşmenin kurulması ve ifası; aile üyeleri arasında güvenli senkronizasyon.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2>2. Cihaz İzinleri ve Kullanım Koşulları</h2>
+    <p>Uygulamanın işlevlerini yerine getirebilmesi için Google Play altyapısı üzerinden kullanıcıdan talep edilen kritik izinler ve bunların sınırları aşağıda belirtilmiştir:</p>
+    <ul>
+        <li><span class="bold">SMS İzinleri (READ_SMS / RECEIVE_SMS):</span> Bu izin, sadece Akıllı SMS Okuyucu özelliği aktif edildiğinde istenir. Banka harcama mesajlarını otomatik analiz etmek dışında hiçbir kişisel veya özel mesaj okunmaz, kopyalanmaz ve cihaz dışına çıkarılmaz.</li>
+        <li><span class="bold">Kamera ve Depolama İzinleri (CAMERA / READ_EXTERNAL_STORAGE):</span> OCR Fatura & Fiş Tarama mekanizmasının çalışabilmesi için fiş görsellerinin alınması amacıyla kullanılır. Alınan görseller sadece metin ayrıştırma amacıyla işlenir.</li>
+        <li><span class="bold">Ağ Erişimi İzni (INTERNET):</span> Ortak Aile Kasası özelliğini kullanan üyelerin verilerinin bulut üzerinden şifreli olarak senkronize edilmesi amacıyla kullanılır.</li>
+    </ul>
+
+    <h2>3. Yerel Yapay Zeka (Gemma) ve Veri İşleme Güvencesi</h2>
+    <p>HaneKasa içinde yer alan <span class="bold">Yapay Zeka Destekli Analist</span> özelliği, gücünü cihazınızda tamamen yerel (on-device) olarak çalışan <span class="bold">Gemma</span> modelinden almaktadır. Finansal verileriniz, harcamalarınız ve bütçe alışkanlıklarınız bu analiz motoru tarafından işlenirken <span class="bold">kesinlikle hiçbir uzak sunucuya gönderilmez</span>. Yapay zeka tasarruf önerilerini cihazınızın sınırları içinde üretir, bu sayede tam finansal gizlilik korunmuş olur.</p>
+
+    <h2>4. Veri Saklama, Güvenlik ve Şifreleme</h2>
+    <p>Kullanıcı verilerinin güvenliği için endüstri standardı protokoller uygulanmaktadır:</p>
+    <ul>
+        <li><span class="bold">Cihaz İçi Güvenlik:</span> Yerel veri tabanında tutulan tüm finansal kayıtlar AES-256 şifreleme algoritması ile kriptolanmaktadır. Cihazın kaybolması veya çalınması durumunda verilere harici erişim engellenir.</li>
+        <li><span class="bold">Bulut Senkronizasyon Güvenliği:</span> Ortak Aile Kasası kapsamında eşzamanlanan veriler, TLS 1.3 protokolü ile uçtan uca şifreli olarak sunucularımıza aktarılır ve veri tabanında izole edilmiş alanlarda saklanır.</li>
+    </ul>
+
+    <h2>5. Üçüncü Taraf Servisler ve Veri Aktarımı</h2>
+    <p>Uygulama altyapısında, Google Play Store politikalarına uygun olarak yalnızca güvenliği doğrulanmış üçüncü taraf SDK'lar kullanılabilir. Mevcut durumda kullanılan yapılar:</p>
+    <ul>
+        <li><span class="bold">Google Play Hizmetleri:</span> Uygulama içi satın alımlar, lisans kontrolü ve uygulama güncellemelerinin yönetimi amacıyla temel Google servisleri kullanılmaktadır. Bu servislerin kendi gizlilik politikaları geçerlidir.</li>
+    </ul>
+    <p>Bunun haricinde, yasal zorunluluklar (adli makamların resmi talepleri) saklı kalmak kaydıyla, kişisel ve finansal verileriniz ticari amaçlarla asla üçüncü şahıslara veya reklam ağlarına satılmaz, kiralanmaz ve paylaşılmaz.</p>
+
+    <h2>6. Çocukların Gizliliği</h2>
+    <p>HaneKasa doğrudan 13 yaşın (veya yerel mevzuata göre 16 yaşın) altındaki çocukları hedef almamaktadır. Eğer bir ebeveyn, çocuğunun Ortak Aile Kasası davet kodu vasıtasıyla uygulamaya veri girişi yaptığını fark eder ve bu verilerin silinmesini talep ederse, aşağıdaki iletişim kanallarından bizlere ulaşarak verilerin derhal imha edilmesini sağlayabilir.</p>
+
+    <h2>7. Kullanıcı Hakları (KVKK Madde 11 ve GDPR Kapsamı)</h2>
+    <p>Dilediğiniz zaman HaneKasa üzerindeki verilerinizle ilgili aşağıdaki haklarınızı kullanabilirsiniz:</p>
+    <ol>
+        <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme ve işlenmişse buna ilişkin bilgi talep etme.</li>
+        <li>Verilerinizin işlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını öğrenme.</li>
+        <li><span class="bold">Veri Silme ve İmha Hakkı:</span> Uygulama içindeki "Hesabımı ve Verilerimi Sil" butonunu kullanarak cihazdaki ve buluttaki tüm verilerinizi geri döndürülemeyecek şekilde tek tıkla silebilirsiniz (Google Play Veri Silme Politikası ile tam uyumludur).</li>
+        <li>Eksik veya yanlış işlenmiş verilerin düzeltilmesini isteme.</li>
+    </ol>
+
+    <h2>8. Değişiklikler ve Bildirimler</h2>
+    <p>Bu Gizlilik Politikası, yasal mevzuattaki değişiklikler veya uygulama güncellemeleri doğrultusunda zaman zaman güncellenebilir. Politikada önemli bir değişiklik yapıldığında, uygulama içinden belirgin bir bildirimle veya e-posta yoluyla tarafınıza bilgi verilecektir.</p>
+
+    <h2>9. İletişim</h2>
+    <p>Bu Gizlilik Politikası, veri işleme süreçleri veya haklarınızın kullanımı ile ilgili tüm soru, görüş ve talepleriniz için bizimle iletişime geçebilirsiniz:</p>
+    <p style="margin-bottom: 5px;"><span class="bold">E-posta:</span> destek@hanekasa.com</p>
+    <p style="margin-bottom: 5px;"><span class="bold">Web Sitesi:</span> https://www.hanekasa.com</p>
+    <p><span class="bold">Adres:</span> HaneKasa Yazılım ve Teknoloji A.Ş., Teknopark, Türkiye.</p>
+
+</body>
+</html>
